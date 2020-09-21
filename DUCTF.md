@@ -24,11 +24,15 @@ A quick ltrace of the binary yielded:<br>
 ltrace didn't finish the whole string, however since we understand formatting and what the values were, we were able to recreate string like this: DUCTF{d1d_You_Just_ltrace_296faa2990acbc36}
 ### Crypto (Rot-i)
 This was a Caesar cypher where the value for each letter's cypher was index % 26.<br>
-I was able to start the python code and was able to fix minor issues with John's help, resulting in this [code](https://github.com/tbart27/DUCTF_Writeup/blob/master/decoder.py) and this output: Here's the flag! DUCTF{crypto_is_fun_kjqlptzy}
+I was able to start the python code and was able to fix minor issues with John's help, resulting in this [code](https://github.com/tbart27/DUCTF_Writeup/blob/master/decoder.py) and this output:<br>
+Here's the flag! DUCTF{crypto_is_fun_kjqlptzy}
 ### Pwn (Shellthis)
 Matt focused on Shellthis from the beginning, and was able to get all the framework needed to solve this once we came back together as a team. We approached this problem in the same way we approached Adam Doupe's Sug4rM4ma challenge by exploiting the buffer overflow vulnerability. A description of the entire process as it relates to sug4rM4ma can be found [here](https://www.youtube.com/watch?v=QGdwbum4O6U).<br>
 However, the solution wasn't working because it was assuming python 2.x and not python 3.x! Fortunately, Ryan had python2 installed and was able to get the following:<br>
-![](https://github.com/tbart27/DUCTF_Writeup/blob/master/pwn1.PNG)<br>
+![](https://github.com/tbart27/DUCTF_Writeup/blob/master/pwn1.png)<br>
+It was a very interesting tangent to figure out why only one of us was successful, and what the differences between python 2.x and 3.x was!<br>
 ### Misc (Welcome)
-
+This was a simpler challenge solved by Ryan that involved putting the flag together from the image below:<br>
+![](https://github.com/tbart27/DUCTF_Writeup/blob/master/misc1.PNG)<br>
 ### Misc (In a Pickle)
+Ryan also figured out this challenge by using the name hint to know that the data was compressed by pickling. Simply using python's pickling libraries was enough to retrieve the flag from this challenge.
