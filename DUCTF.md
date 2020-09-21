@@ -1,10 +1,10 @@
 # DUCTF
+[Write Up Link](https://github.com/tbart27/DUCTF_Writeup/blob/master/DUCTF.md)<br>
 ### Team: 466 Crew
 Taylor Bart<br>
 Ryan Dunn<br>
 John Tiffany<br>
 Matt Evans<br>
-[DUCTF Write Up](https://github.com/tbart27/DUCTF_Writeup/blob/master/DUCTF.md)<br>
 By the end of the CTF we were able to solve 5 non-trivial challenges for 600 points, finishing at 505th.
 ### Reversing (Formatting)
 To begin the CTF, John and I approached the reversing challenge of the CTF. We used binary ninja and at first glance we thought we found the flag in an almost trivial fashion.<br>
